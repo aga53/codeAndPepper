@@ -4,7 +4,7 @@ import data from "../testData/td.loginData";
 describe("Login to the application", () => {
   const loginPage = new LoginPage();
 
-  beforeEach(() => {
+  before(() => {
     loginPage.visitBasicUrl(data.basicUrl)
   });
 
