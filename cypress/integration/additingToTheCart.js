@@ -2,11 +2,11 @@ import LoginPage from "../pages/po.login";
 import InventoryPage from "../pages/po.inventory";
 import data from "../testData/td.loginData";
 
-describe("Adding procuct to the cart", () => {
+describe("Adding product to the cart", () => {
   const loginPage = new LoginPage();
   const inventory = new InventoryPage();
 
-  beforeEach(() => {
+  before(() => {
     cy.visit(data.basicUrl);
     loginPage.fillUsernameAndPassword(data.correctUsername, data.password);
     loginPage.clickLoginButton();
